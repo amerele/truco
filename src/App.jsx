@@ -1,19 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import Card from './components/card';
-import { Embaralhar } from './back/api';
 import './app.css'
+import { Hand} from './components/hand';
 
 function App() {
-const [Carde, setCard] = useState('a');
   return (
-    <>
-      <button onClick={(e) => {
-         setCard(Embaralhar())
-      }}> CLICK</button>
+    <div className="table">
+      <Hand />
+    </div>
       
-      <Card />
-    </>
-    
   )
 }
 
